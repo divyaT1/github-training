@@ -1,5 +1,20 @@
-emoji
-darkmode
-signs
-video
-ty
+In Config file 
+
+File ->>> ./Tarun_1/analytics_platform/configuration/app_props.ini
+Need to replace new values 
+
+"zerodha.api_key":"1vgxipoasjwx89xg",
+"zerodha.secret_key":"e2z1dzs8yov00wmquzg8pgalwjpdro23",
+
+
+In Code
+
+./Tarun_1/analytics_platform/platforms/zerodha/zerodha_stream_api.py
+
+__api_key: str = "1vgxipoasjwx89xg"
+
+./Tarun_2/trading/sources/zerodha.py
+
+   __access_token: str = "gAHQkYG6l7Q1KzQW2UCJ82QOF4bNeEus"
+    __api_key: str = "1vgxipoasjwx89xg"
+    __secret_key: str = "e2z1dzs8yov00wmquzg8pgalwjpdro23"
